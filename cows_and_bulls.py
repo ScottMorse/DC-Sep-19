@@ -52,13 +52,13 @@ if __name__ == "__main__":
         for i in range(len(answer_digits)):
             if user_input[i] == answer_digits[i]:
                 cows += 1
-                answer_digits[i] = ""
+                answer_digits[i] = "x"
         
         for i in range(len(answer_digits)):
             for n in range(len(answer_digits)):
                 if answer_digits[n] == user_input[i]:
                     bulls += 1
-                    answer_digits[n] = ""
+                    answer_digits[n] = "n"
                     break
 
         attempt += 1
